@@ -17,12 +17,17 @@
       .state('index.main', {
         url: "/main",
         templateUrl: "app/main/main.html",
-        data: { pageTitle: 'Example view' }
+        data: { pageTitle: 'Example view' },
+        
       })
       .state('index.minor', {
         url: "/minor",
         templateUrl: "app/minor/minor.html",
         data: { pageTitle: 'Example view' }
+      })
+      .state('index.dashboards', {
+        url: "/dashboards",
+        templateUrl: "app/dashboards/dashboard_1.html"
       });
 
     $urlRouterProvider.otherwise('/index/main');
